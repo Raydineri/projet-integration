@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fb;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    font-style: italic;
+}
+h2 {
+    color:rgb(182, 44, 44) ;
+    font-style: italic;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.conditions {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.annee-label {
+    font-size: 30px; 
+    text-align: center;
+    margin-bottom: 20px; 
+}

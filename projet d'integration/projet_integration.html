@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription PFE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Inscription pour PFE</h1>
+        <form action="projet_integration.php" method="post" enctype="multipart/form-data">
+            <div class="section">
+                <div class="form-group">
+                    <label for="annee" class="annee-label">Année : 2024</label>
+                </div>
+                <h2>ETUDIANT(1) </h2>
+                <div class="form-group">
+                    <label for="encadrant_entreprise">Etudiant1*</label>
+                    <input type="text" id="etud1" name="etud1" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Groupe Etudiant1*</label>
+                    <select id="gr1" name="gr1" required>
+                        <option value=""></option>
+                        <option value="1">L1-DSI1</option>
+                        <option value="2">L2-DSI2</option>
+                        <option value="3">L3-DSI3</option>
+                    </select>
+                </div><br>
+                <div class="form-group">
+                    <label for="etud1">E-mail Etudiant1*</label>
+                    <input type="email" id="etud1_email" name="etud1_email" required>
+                </div>
+                
+                <h2><h2>ETUDIANT(2) </h2></h2>
+                <div class="form-group">
+                    <label for="encadrant_entreprise">Etudiant2*</label>
+                    <input type="text" id="etud2" name="etud2" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Groupe Etudiant2*</label>
+                    <select id="gr2" name="gr2" required>
+                        <option value=""></option>
+                        <option value="1">L1-DSI1</option>
+                        <option value="2">L2-DSI2</option>
+                        <option value="3">L3-DSI3</option>
+                    </select>
+                </div><br>    
+                    <div class="form-group">
+                        <label for="etud1">E-mail Etudiant2*</label>
+                        <input type="email" id="etud2_email" name="etud2_email" required>
+                    </div>
+                
+                <div class="form-group">
+                    <label for="titre">Titre du Projet*:</label>
+                    <textarea id="titre" name="titre" rows="2" cols="50" required></textarea>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Sujet et mémoire</h2>
+                <div class="form-group">
+                    <label for="titre_projet">Encadrant(e)-ISET:</label>
+                    <input type="text" id="enci" name="enci" required>
+                </div>
+                <div class="form-group">
+                    <label for="nom-entreprise">Nom-Entreprise*:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Encadrant(e)-Entreprise:</label>
+                    <input type="text" id="ence" name="ence" required>
+                </div>
+                <div class="form-group">
+                    <label for="fiche_pfe">Importer FichePFE (PDF)</label>
+                    <input type="file" id="fiche_pfe" name="fiche_pfe" accept="application/pdf" required>
+                </div>
+                
+            </div>
+            <div >
+                <input type="checkbox" id="conditions" name="conditions" required> J'accepte les conditions générales
+            
+        </div>
+        <button type="submit">Envoyer</button>
+    </form>
+</div>
+</body>
+</html>

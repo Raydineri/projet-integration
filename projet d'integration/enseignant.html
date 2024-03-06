@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin PFE</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.student-reports {
+    margin-top: 20px;
+}
+
+.report {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.report h2 {
+    margin-top: 0;
+}
+
+.report p {
+    margin: 5px 0;
+}
+
+.report a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.decision {
+    text-align: right;
+}
+
+.accept-btn, .reject-btn {
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.accept-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.reject-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Administration des PFE</h1>
+        <div class="student-reports">
+            <div class="report">
+                <h2>Nom de l'étudiant 1</h2>
+                <p>Date de soumission : 01/02/2024</p>
+                <a href="#">Télécharger le rapport</a>
+                <div class="decision">
+                    <button class="accept-btn">Accepter</button>
+                    <button class="reject-btn">Refuser</button>
+                </div>
+            </div>
+            <div class="report">
+                <h2>Nom de l'étudiant 2</h2>
+                <p>Date de soumission : 05/02/2024</p>
+                <a href="#">Télécharger le rapport</a>
+                <div class="decision">
+                    <button class="accept-btn">Accepter</button>
+                    <button class="reject-btn">Refuser</button>
+                </div>
+            </div>
+            <!-- Ajouter d'autres rapports d'étudiants ici -->
+        </div>
+    </div>
+</body>
+</html>
